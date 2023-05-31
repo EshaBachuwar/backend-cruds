@@ -23,7 +23,6 @@ mongoose.connection.on('disconnected', () => {
   console.log('mongoDB disconnected');
 });
 
-app.use(cookieParser());
 app.use(express.json());
 app.use(bodyParser.json());
 app.use(cors());
